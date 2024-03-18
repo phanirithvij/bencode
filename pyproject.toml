@@ -12,4 +12,4 @@ license = {text = "LGPL-3.0-or-later"}
 
 
 [tool.pdm]
-distribution = false
+distribution = true
