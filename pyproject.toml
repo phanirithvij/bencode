@@ -1,0 +1,15 @@
+[project]
+name = "bencode"
+version = "0.1.0"
+description = "a fork of Celend/bencode: python 3 bencode, support UTF-8 and read/write BT torrent file."
+authors = [
+    {name = "Celend", email = "forevertjt@gmail.com"},
+]
+dependencies = []
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "LGPL-3.0-or-later"}
+
+
+[tool.pdm]
+distribution = false
