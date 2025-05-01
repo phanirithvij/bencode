@@ -8,8 +8,28 @@ authors = [
 dependencies = []
 requires-python = "==3.12.*"
 readme = "README.md"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
 license = {text = "LGPL-3.0-or-later"}
 
 [build-system]
-requires = ["pdm-backend >= 2.4.0"]
-build-backend = "pdm.backend"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.urls]
+Documentation = "https://github.com/phanirithvij/bencode#readme"
+Issues = "https://github.com/phanirithvij/bencode/issues"
+Source = "https://github.com/phanirithvij/bencode"
+
+[tool.hatch.version]
+path = "src/bencode/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
